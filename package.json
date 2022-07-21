@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "appHost",
+      "appRemote"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --scope @vue3-micro-fe/* --parallel start",
+    "build": "lerna run --scope @vue3-micro-fe/* build",
+    "serve": "lerna run --scope @vue3-micro-fe/* --parallel serve",
+    "clean": "lerna run --scope @vue3-micro-fe/* --parallel clean"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  }
+}
